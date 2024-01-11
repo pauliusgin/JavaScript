@@ -79,7 +79,7 @@ console.log(`Sandauga: ${sandauga}`);
 console.log("=================\n");
 
 // 8.
-console.log("Skaičių nuo 1 iki 100 suma");
+console.log("8. Skaičių nuo 1 iki 100 suma");
 
 let suma = 0;
 
@@ -87,3 +87,79 @@ for (let i = 1; i <= 100; i++) {
     suma = suma + i;
 }
 console.log(suma);
+
+console.log("=================\n");
+
+// 9.
+console.log("9. Lyginių skaičių suma");
+
+let sumaLyginiai = 0;
+
+for (let i = 20; i <= 50; i += 2) {
+    sumaLyginiai += i;
+}
+console.log(sumaLyginiai);
+
+console.log("=================\n");
+
+// 10.
+console.log("10. Nelyginių skaičių suma");
+
+let sumOdd = 0;
+
+for (let i = 30; i <= 60; i++) {
+    if (i % 2 === 1) {
+        sumOdd += i;
+    }
+}
+console.log(sumOdd);
+
+console.log("=================\n");
+
+// 11.
+console.log("11. Skaičių iki 1000 suma");
+
+let sum1000 = 0;
+
+for (let i = 1; i < 1000; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+        sum1000 += i;
+    }
+}
+console.log(sum1000);
+
+console.log("=================\n");
+
+// 12.
+console.log("12. FizzBuzz");
+
+for (let i = 1; i <= 100; i++) {
+    if (i % 5 === 0 && i % 3 === 0) {
+        console.log("FizzBuzz");
+    } else if (i % 5 === 0 && i % 3 !== 0) {
+        console.log("Buzz");
+    } else if (i % 3 === 0 && i % 5 !== 0) {
+        console.log("Fizz");
+    } else {
+        console.log(i);
+    }
+}
+
+console.log("=================\n");
+
+// 13.
+console.log("13. Fibonacci seka");
+
+let num1 = 1;
+let num2 = 1;
+let numFib;
+
+console.log(num1);
+console.log(num2);
+
+for (let i = 2; i < 10; i++) {
+    numFib = num1 + num2;
+    console.log(numFib);
+    num1 = num2;
+    num2 = numFib;
+}
