@@ -3,7 +3,7 @@ console.log("1. Užduotis:");
 
 let euroDollarRate = 1.1;
 
-const euroToDollar = (euro) => euro * euroDollarRate;
+(euro) => euro * euroDollarRate;
 
 console.log(`Penki eurai doleriais: ${euroToDollar(5)}`);
 
