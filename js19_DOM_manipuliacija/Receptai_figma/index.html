@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receptai | Figma</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./bootstrap/bootstrap.bundle.min.js" defer></script>
+    <!-- <script type="module" src="./javascript/index.js" defer></script> -->
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="section recipes">
+        <h1 class="recipes__title">Pasirinkite receptą:</h1>
+        <div class="recipes__main" id="recipes_zone"></div>
+      </div>
+      <div class="slider section">
+        <div class="slider__wrapper">
+          <label for="customRange1" class="slider__label"
+            >Kiek porcijų gaminsite? <br />
+            (nuo 1 iki 10)</label
+          >
+          <input
+            type="range"
+            class="slider__range"
+            step="1"
+            min="1"
+            max="10"
+            id="customRange1"
+          />
+        </div>
+      </div>
+      <div class="amounts section">
+        <h1 class="amounts__title">
+          Jums reikės šių ingredientų, tokiais kiekiais:
+        </h1>
+        <div class="amounts__result" id="output">
+          <p class="amounts__placeholder">Pasirinkite receptą.</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./javascript/index.js"></script>
+  </body>
+</html>

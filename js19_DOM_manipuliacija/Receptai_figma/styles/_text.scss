@@ -1,0 +1,30 @@
+@use "./_mixins.scss" as *;
+
+.recipes {
+  &__title {
+    @include title(16px);
+  }
+  .text {
+    &_title {
+      @include title(12px);
+    }
+    &_ingredients {
+      @include regular(10px);
+    }
+  }
+}
+
+.slider {
+  &__label {
+    @include title(16px);
+  }
+}
+
+.amounts {
+  &__title {
+    @include title(16px);
+  }
+  &__placeholder {
+    @include regular(10px);
+  }
+}
