@@ -9,11 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
     <script src="./bootstrap/bootstrap.bundle.min.js" defer></script>
-    <!-- <script type="module" src="./javascript/index.js" defer></script> -->
+    <script type="module" src="./javascript/index.js" defer></script>
   </head>
 
   <body>
@@ -23,31 +23,31 @@
         <div class="recipes__main" id="recipes_zone"></div>
       </div>
       <div class="slider section">
+        <label for="customRange1" class="slider__label"
+          >Kiek porcijų gaminsite?</label
+        >
         <div class="slider__wrapper">
-          <label for="customRange1" class="slider__label"
-            >Kiek porcijų gaminsite? <br />
-            (nuo 1 iki 10)</label
-          >
           <input
             type="range"
             class="slider__range"
+            id="slider"
             step="1"
             min="1"
             max="10"
+            value="1"
             id="customRange1"
           />
+          <div class="slider__value_field" id="slider__value"></div>
         </div>
       </div>
-      <div class="amounts section">
-        <h1 class="amounts__title">
+      <div class="output section">
+        <h1 class="output__title">
           Jums reikės šių ingredientų, tokiais kiekiais:
         </h1>
-        <div class="amounts__result" id="output">
-          <p class="amounts__placeholder">Pasirinkite receptą.</p>
+        <div class="output__list" id="outputList">
+          <p class="output__placeholder">Pasirinkite receptą.</p>
         </div>
       </div>
     </div>
-
-    <script type="module" src="./javascript/index.js"></script>
   </body>
 </html>

@@ -18,13 +18,20 @@
   &__label {
     @include title(16px);
   }
+  &__value_field {
+    @include regular(10px);
+  }
 }
 
-.amounts {
+.output {
   &__title {
     @include title(16px);
   }
-  &__placeholder {
+  &__list {
     @include regular(10px);
+  }
+  &__ingredient_amount {
+    @include regular(10px);
+    font-weight: 700;
   }
 }

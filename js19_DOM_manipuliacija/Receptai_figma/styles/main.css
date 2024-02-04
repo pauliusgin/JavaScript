@@ -141,19 +141,24 @@ html {
   text-align: start;
   margin-bottom: 1rem;
 }
-.recipes__recipe_text .ingredient {
+.recipes__recipe_text .ingredient_line {
   display: flex;
   justify-content: space-between;
+  cursor: text;
 }
 
 .slider__wrapper {
-  width: 214px;
+  width: 235px;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .slider__label {
   margin-bottom: 2rem;
 }
 .slider__range {
-  width: 100%;
+  width: 214px;
   -webkit-appearance: none;
   background: #000;
   height: 1px;
@@ -166,8 +171,14 @@ html {
   border-radius: 50%;
 }
 
-.amounts__title {
+.output__title {
   margin-bottom: 1rem;
+}
+.output__ingredient_line {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  cursor: text;
 }
 
 .recipes__title {
@@ -203,8 +214,16 @@ html {
   font-weight: 700;
   line-height: normal;
 }
+.slider__value_field {
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
-.amounts__title {
+.output__title {
   color: #000;
   font-family: Roboto;
   font-size: 16px;
@@ -212,11 +231,20 @@ html {
   font-weight: 700;
   line-height: normal;
 }
-.amounts__placeholder {
+.output__list {
   color: #000;
   font-family: "Open Sans";
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.output__ingredient_amount {
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */

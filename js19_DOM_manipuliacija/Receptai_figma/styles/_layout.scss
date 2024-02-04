@@ -53,9 +53,10 @@ html {
         text-align: start;
         margin-bottom: 1rem;
       }
-      .ingredient {
+      .ingredient_line {
         display: flex;
         justify-content: space-between;
+        cursor: text;
       }
     }
   }
@@ -63,13 +64,17 @@ html {
 
 .slider {
   &__wrapper {
-    width: 214px;
+    width: 235px;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   &__label {
     margin-bottom: 2rem;
   }
   &__range {
-    width: 100%;
+    width: 214px;
     -webkit-appearance: none;
     background: $black;
     height: 1px;
@@ -83,8 +88,14 @@ html {
   }
 }
 
-.amounts {
+.output {
   &__title {
     margin-bottom: 1rem;
+  }
+  &__ingredient_line {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    cursor: text;
   }
 }
