@@ -1,0 +1,101 @@
+@use "./mixins" as *;
+@use "./variables" as *;
+
+html {
+  background: $background-gray;
+}
+
+.wrapper {
+  padding: 3rem;
+  background: $background-gray;
+  @include flex-center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section {
+  width: 600px;
+  background: $white;
+  padding: 2rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.recipes {
+  &__title {
+    margin-bottom: 1rem;
+  }
+  &__main {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+  &__mark:not(.visible) {
+    display: none;
+  }
+  &__wrapper {
+    position: relative;
+    cursor: pointer;
+  }
+  &__recipe {
+    width: 133px;
+
+    .recipe_image {
+      @include recipeImage;
+    }
+
+    &_text {
+      padding: 1rem 0.5rem;
+      border: 1px solid $border-gray;
+      border-top: none;
+      height: 134px;
+
+      .text_title {
+        text-align: start;
+        margin-bottom: 1rem;
+      }
+      .ingredient_line {
+        display: flex;
+        justify-content: space-between;
+        cursor: text;
+      }
+    }
+  }
+}
+
+.slider {
+  &__wrapper {
+    width: 235px;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__label {
+    margin-bottom: 2rem;
+  }
+  &__range {
+    width: 214px;
+    -webkit-appearance: none;
+    background: $black;
+    height: 1px;
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      background: $black;
+      height: 7px;
+      width: 7px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.output {
+  &__title {
+    margin-bottom: 1rem;
+  }
+  &__ingredient_line {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    cursor: text;
+  }
+}
