@@ -1,12 +1,11 @@
-function clearOutputList() {
+// default message for when the output list is empty
+function outputDefaultMessage(message) {
   const outputList = document.getElementById("outputList");
-  outputList.innerHTML = "";
-
   const outputPlaceholder = document.createElement("p");
   outputPlaceholder.classList.add("output__placeholder");
 
   outputList.appendChild(outputPlaceholder);
-  outputPlaceholder.innerHTML = "Pasirinkite receptą.";
+  outputPlaceholder.innerHTML = message;
 }
 
-export { clearOutputList };
+export { outputDefaultMessage };

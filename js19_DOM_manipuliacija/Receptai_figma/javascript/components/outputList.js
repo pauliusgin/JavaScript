@@ -4,7 +4,7 @@ function outputList(dish) {
   const output = document.getElementById("outputList");
   // reset current values
 
-  for (let ingredient of dish.ingredients) {
+  for (const ingredient of dish.ingredients) {
     const totalAmount = calculateAmount(ingredient);
     //create
     const outputIngredientLine = document.createElement("div");

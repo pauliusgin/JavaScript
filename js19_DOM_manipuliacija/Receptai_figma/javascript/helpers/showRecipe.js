@@ -1,7 +1,7 @@
 import { selectionMark } from "../components/selectionMark.js";
 import { recipeCard } from "../components/recipeCard.js";
-import { toggleSelectionMark } from "../helpers/toggleSelectionMark.js";
-import { markSelectedRecipe } from "./markSelectedRecipe.js";
+import { toggleSelectionMark } from "./eventListeners.js";
+import { markSelectedRecipe } from "./eventListeners.js";
 
 function showRecipe(dish) {
   recipeCard(dish);
